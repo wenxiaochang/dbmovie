@@ -1,0 +1,12 @@
+<template name="starstemplate">
+  <view class="stars-container">
+    <view class='stars'>
+      <image src='/images/star.png'></image>
+      <image src='/images/star.png'></image>
+      <image src='/images/star.png'></image>
+      <image src='/images/star.png'></image>
+      <image src='/images/star.png'></image>
+    </view>
+    <view class='star-score'>{{sc}}</view>
+  </view>
+</template>

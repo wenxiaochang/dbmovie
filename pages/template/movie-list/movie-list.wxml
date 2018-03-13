@@ -1,0 +1,21 @@
+<import src="../movie/movie.wxml" />
+<template name="movielist">
+  <view class='movie-list-container'>
+    <view class='inner-container'>
+      <view class='movie-head'>
+        <text class='slogan'>热门上映</text>
+        <view>
+          <text class='more-text slogan'>更多</text>
+        </view>
+      </view>
+      <view class='movies-container'>
+        <block wx:for="{{movies}}" wx:for-item="movieArr">
+          <template is="movie" data="{{...movieArr}}" />
+        </block>
+
+        <!-- <template is="movie" />
+        <template is="movie" /> -->
+      </view>
+    </view>
+  </view>
+</template>

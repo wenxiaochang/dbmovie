@@ -1,0 +1,8 @@
+@import "/pages/template/movie/movie.wxss";
+@import "/pages/template/stars/stars.wxss";
+@import "/pages/template/movie-list/movie-list.wxss";
+
+page{
+  background-color: #ededed;
+  color: #333;
+}

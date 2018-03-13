@@ -1,0 +1,11 @@
+<import src="../stars/stars.wxml" />
+<template name="movie">
+<navigator url="/pages/detail/detail?id={{id}}">
+  <view class='movie-container'>
+    <image class='movie-img'src='{{img}}'></image>
+    <text class='movie-title'>{{nm}}</text>
+    <text class='movie-title'>{{cat}}</text>
+    <template is="starstemplate" data="{{sc}}" />
+  </view>
+ </navigator>
+</template>

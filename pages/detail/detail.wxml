@@ -1,0 +1,2 @@
+<!--pages/detail/detail.wxml-->
+<text>http://m.maoyan.com/movie/{{id}}.json</text>
