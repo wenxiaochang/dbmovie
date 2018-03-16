@@ -5,7 +5,7 @@
     <image class='movie-img'src='{{img}}'></image>
     <text class='movie-title'>{{nm}}</text>
     <text class='movie-title'>{{cat}}</text>
-    <template is="starstemplate" data="{{sc}}" />
+    <template is="starstemplate" data="{{sc:sc,stars:stars}}" />
   </view>
  </navigator>
 </template>
