@@ -9,7 +9,7 @@ Page({
   onLoad: function () {
     var hotUrl = '/movie/list.json?type=hot&offset=0&limit=14';
     //发起一个网络请求
-    //this.Ajax(hotUrl);
+    this.Ajax(hotUrl);
   },
   Ajax: function (url) {
     var _this = this;

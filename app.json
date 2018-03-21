@@ -2,7 +2,7 @@
   "pages": [
     "pages/index/index",
     "pages/detail/detail",
-    "pages/logs/logs"
+    "pages/cinema/cinema"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -10,7 +10,7 @@
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
-    "selectedColor":"#e54847",
+    "selectedColor": "#e54847",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -19,8 +19,8 @@
         "selectedIconPath": "images/icon/movie_active.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/cinema/cinema",
+        "text": "影院",
         "iconPath": "images/icon/cinema.png",
         "selectedIconPath": "images/icon/cinema_active.png"
       }

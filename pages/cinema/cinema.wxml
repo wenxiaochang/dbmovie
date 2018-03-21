@@ -1,0 +1,27 @@
+<!--pages/cinema/cinema.wxml-->
+<view class='container'>
+ <view class='map'>
+    <text>当前位置:</text>
+    <block wx:for="{{markers}}">
+    <text>{{item.address}}</text>
+    </block>
+  </view>
+  <block wx:for="{{cinemas}}" wx:for-item="i">
+    <block wx:for="{{i}}" wx:for-item="j">
+      <view class='cinema-group'>
+        <view class='head'>
+          <text class='title'>{{j.nm}}</text>
+          <text class='pice'>{{j.sellPrice}}<text>元起</text></text>
+        </view>
+        <view class='location'>
+          <text class='addres'>{{j.addr}}</text>
+          <text class='dis'>{{j.dis}}</text>
+        </view>
+        <view class='tag-group'>
+          <text class='tag'>座</text>
+          <text class='tag'>4K厅</text>
+        </view>
+      </view>
+    </block>
+  </block>
+</view>
