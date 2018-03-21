@@ -1,5 +1,5 @@
 App({
   glob: {
-    Baseurl: 'http://m.maoyan.com'
+    Baseurl: 'https://m.maoyan.com'
   },
 })
