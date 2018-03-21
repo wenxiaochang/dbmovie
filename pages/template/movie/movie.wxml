@@ -1,11 +1,13 @@
 <import src="../stars/stars.wxml" />
 <template name="movie">
-<navigator url="/pages/detail/detail?id={{id}}">
-  <view class='movie-container'>
-    <image class='movie-img'src='{{img}}'></image>
-    <text class='movie-title'>{{nm}}</text>
-    <text class='movie-title'>{{cat}}</text>
-    <template is="starstemplate" data="{{sc:sc,stars:stars}}" />
-  </view>
- </navigator>
+  <!-- <navigator url="/pages/detail/detail?id={{id}}"> -->
+    <view class='movie-container' catchtap='godetail' data-id='{{id}}' data-name='{{name}}'>
+      <image class='movie-img' src='{{img}}'></image>
+      <view class='right-container'>
+        <text class='movie-title'>{{nm}}</text>
+        <text class='movie-type'>{{cat}}</text>
+        <template is="starstemplate" data="{{sc:sc,stars:stars}}" />
+      </view>
+    </view>
+  <!-- </navigator> -->
 </template>

@@ -1,22 +1,19 @@
 .movie-container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 22rpx;
-}
-
-.movie-container {
-  display: flex;
-  flex-direction: column;
+  float: left;
   padding: 22rpx 22rpx;
 }
 
 .movie-img {
   width: 200rpx;
   height: 270rpx;
-  padding-bottom: 20rpx;
+  float: left;
 }
 
 .movie-title {
-  margin-bottom: 16rpx;
+  margin-left: 5rpx;
+  font-size: 24rpx;
+}
+.movie-type{
+  display: block;
   font-size: 24rpx;
 }

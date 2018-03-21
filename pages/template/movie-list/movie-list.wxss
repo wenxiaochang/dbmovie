@@ -5,9 +5,9 @@
   margin-bottom: 20rpx;
 }
 
-.inner-container {
+ /* .inner-container {
   margin: 0 auto 20rpx;
-}
+}  */
 
 .movie-head {
   padding: 30rpx 20rpx 22rpx;
@@ -35,9 +35,10 @@
   height: 16rpx;
   vertical-align: middle;
 }
-
+ 
 .movies-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
+  height: 1300rpx;
+} 

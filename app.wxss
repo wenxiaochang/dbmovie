@@ -5,4 +5,5 @@
 page{
   background-color: #ededed;
   color: #333;
+  font-size: 28rpx;
 }

@@ -4,15 +4,16 @@
     <view class='inner-container'>
       <view class='movie-head'>
         <text class='slogan'>热门上映</text>
-        <view>
+        <!-- <view>
           <text class='more-text slogan'>更多</text>
-        </view>
+        </view> -->
       </view>
       <view class='movies-container'>
-        <block wx:for="{{movies}}" wx:for-item="movieArr">
-          <template is="movie" data="{{...movieArr}}" />
-        </block>
-
+         <scroll-view scroll-x="false" scroll-y="true" bindscrolltolower="onscroll" bindscrolltoupper="onPullDownRefresh">
+          <block wx:for="{{movies}}" wx:for-item="movieArr">
+            <template is="movie" data="{{...movieArr}}" />
+          </block>
+         </scroll-view> 
         <!-- <template is="movie" />
         <template is="movie" /> -->
       </view>

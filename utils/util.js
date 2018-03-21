@@ -16,7 +16,12 @@ function convertToStarsArray(stars) {
   }
   return array;
 }
+
+function delHtmlTag(str) {
+  return str.replace(/<[^>]+>/g, "");//去掉所有的html标记
+}
 //抛出方法
 module.exports = {
-  convertToStarsArray: convertToStarsArray
+  convertToStarsArray: convertToStarsArray,
+  delHtmlTag: delHtmlTag
 }
